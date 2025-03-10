@@ -2,12 +2,16 @@ import Leftbar from "./components/leftbar/Leftbar";
 import Navbar from "./components/navbar/Navbar";
 import Rightbar from "./components/rightbar/Rightbar";
 import Update from "./components/update/Update";
+import { useState } from "react";
 import "./app.css";
 
 const App = () => {
+
+  const [name, setName] = useState("Shiver");
+
   return (
     <>
-      <Navbar />
+      <Navbar name={name}/>
       <div className="container">
         <Leftbar />
         <Update />
