@@ -8,7 +8,7 @@ export const userSlice = createSlice({
             email: "anna@gmail.com"
         }
     },
-    pending: false,
+    pending: null,
     error: false,
     reducers:{
         updateStart:(state)=>{

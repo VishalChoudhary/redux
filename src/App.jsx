@@ -7,6 +7,7 @@ import "./app.css";
 
 const App = () => {
 
+  // eslint-disable-next-line 
   const [name, setName] = useState("Shiver");
 
   return (
