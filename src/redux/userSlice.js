@@ -62,7 +62,7 @@ import axios from "axios";
 
 export const updateUser2 = createAsyncThunk("users/update", async(user)=>{
     const response = await axios.post(
-        "http://111localhost:8800/api/users/1/update",
+        "http://localhost:8800/api/users/1/update",
         user
     );
     return response.data;
